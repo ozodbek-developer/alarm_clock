@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+@font-face {
+    font-family: 'Digital-7';
+    src: url(./digital-7.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    height: 100vh;
+    background-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 300px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+.clock {
+    text-align: center;
+    font-size: 90px;
+    font-family: "Digital-7";
+    font-weight: bold;
+    
+}
+.setAlarm, .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    margin: 5px;
+    text-align: center;
+    font-size: 24px;
+    border-color: red green blue orange;
+    border-width: 5px;
+    border-radius: 50%;
+}
+
+.buttons button {
+    width: 100px;
+    height: 40px;
+    margin: 15px 3px;
+    outline: none;
+    border-color: red green blue orange;
+    border-width: 5px;
+    border-radius: 10px;
+    transition: 0.3s all;
+}
+.buttons button:hover {
+    transform: scale(1.1);
+    border-color: green blue orange red;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.buttons button:active {
+    transform: scale(0.95);
+}
+
+/* Other Styles */
+span {
+    transition: 0.3s all;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    transform: translateX(-300px)
+}
